@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{05817E2E-7E90-4782-B1CE-DC1B626C5278}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{283C6039-BD1B-471F-A058-227DE96AF567}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Poligonos", "src\Poligonos\Poligonos.xproj", "{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Poligonos.Domain", "src\Poligonos.Domain\Poligonos.Domain.xproj", "{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB509C68-D6ED-4A37-BCEA-51968C6CCFA4} = {05817E2E-7E90-4782-B1CE-DC1B626C5278}
+		{3009CC53-DE48-4ADD-A2A3-F7A9ABAB807C} = {05817E2E-7E90-4782-B1CE-DC1B626C5278}
+	EndGlobalSection
+EndGlobal
