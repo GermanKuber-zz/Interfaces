@@ -1,43 +1,44 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using Peoples.Repositories.Interface;
+using Peoples.Repositories.Service;
 
 namespace People.ExternalService.Controllers
 {
     [Route("api/[controller]")]
     public class PeopleController : Controller
     {
-        // GET api/values
+        static readonly IPeopleRepository PeopleRepo = new PeopleExternalRepository();
         [HttpGet]
-        public IEnumerable<string> Get()
+        [ProducesResponseType(typeof(IEnumerable<Person>), 200)]
+        public IEnumerable<Person> Get()
         {
-            return new string[] { "value1", "value2" };
+            return PeopleRepo.GetPeople();
+        }
+        [HttpGet("{lastName}")]
+        [ProducesResponseType(typeof(Person), 200)]
+        public Person Get(string lastName)
+        {
+            return PeopleRepo.GetPeople().FirstOrDefault(x => x.LastName == lastName);
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Person value)
         {
+            PeopleRepo.AddPerson(value);
         }
 
-        // PUT api/values/5
+
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{lastname}")]
+        public void Delete(string lastname)
         {
+            PeopleRepo.DeletePerson(lastname);
         }
     }
 }

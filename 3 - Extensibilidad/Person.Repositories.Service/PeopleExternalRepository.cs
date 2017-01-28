@@ -1,13 +1,13 @@
-﻿using Peoples.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Peoples.Repositories.Interface;
 
-namespace Person.Repositories.Service
+namespace Peoples.Repositories.Service
 {
     //TODO : 02 -  Implemento un repositorio que consume data externa
     public class PeopleExternalRepository : IPeopleRepository
     {
-        public void AddPerson(Peoples.Data.Person newPerson)
+        public void AddPerson(Person newPerson)
         {
             throw new NotImplementedException();
         }
@@ -17,22 +17,22 @@ namespace Person.Repositories.Service
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Peoples.Data.Person> GetPeople()
+        public IEnumerable<Person> GetPeople()
         {
             throw new NotImplementedException();
         }
 
-        public Peoples.Data.Person GetPerson(string lastName)
+        public Person GetPerson(string lastName)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdatePeople(IEnumerable<Peoples.Data.Person> updatedPeople)
+        public void UpdatePeople(IEnumerable<Person> updatedPeople)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdatePerson(string lastName, Peoples.Data.Person updatedPerson)
+        public void UpdatePerson(string lastName, Person updatedPerson)
         {
             throw new NotImplementedException();
         }

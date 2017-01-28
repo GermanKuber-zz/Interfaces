@@ -1,27 +1,26 @@
-﻿using Peoples.Data;
-using Person.Repositories.Service;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace Peoples
 {
     public class Program
     {
-        static readonly IPeopleRepository PeopleRepo = new PeopleExternalRepository();
-        public static void Main(string[] args)
-        {
-            
-          
-            IEnumerable<Peoples.Data.Person> peoples = PeopleRepo.GetPeople();
-            foreach (var person in peoples)
-                WritePerson(person);
-
+        //TODO : 06 - Refactorizo programa principal, para consumir cualquiera de los repositorios
+         static void Main(string[] args)
+         {
+            ConsoleKeyInfo key;
+            while (key.KeyChar != '4')
+            {
+                MenuManager.WriteMenu();
+                key = Console.ReadKey();
+                MenuManager.OptionMenu(key);
+            }
             Console.Read();
+            //TODO : 10 - Utilizo el servicio Manager UI
+            //MenuManager.Start();
         }
 
-        private static void WritePerson(Peoples.Data.Person data)
-        {
-            Console.WriteLine($"First Name : {data.FirstName} , Last Name :  {data.LastName}, Date : {data.StartDate}");
-        }
+        
+
+      
     }
 }

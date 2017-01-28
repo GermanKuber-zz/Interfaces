@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Peoples.Data
+namespace Peoples.Repositories.Interface
 {
     public class Person
     {

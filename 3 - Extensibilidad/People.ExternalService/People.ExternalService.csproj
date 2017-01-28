@@ -1,4 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup Label="Configuration">
+    <DocumentationFile>
+    </DocumentationFile>
+    <OutputPath>TodoApi.xml</OutputPath>
+  </PropertyGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
@@ -16,5 +21,10 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0-rc1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Person.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
+    <ProjectReference Include="..\Person.Repositories.Service\Peoples.Repositories.Service.csproj" />
   </ItemGroup>
 </Project>

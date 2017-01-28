@@ -1,18 +1,21 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using People.ExternalService;
-using System.IO;
+﻿using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
-class Program
+namespace People.ExternalService
 {
-    static void Main(string[] args)
+    class Program
     {
-        var host = new WebHostBuilder()
-             .UseKestrel()
-             .UseContentRoot(Directory.GetCurrentDirectory())
-             .UseIISIntegration()
-             .UseStartup<Startup>()
-             .Build();
-        host.Run();
-    }
+        //TODO : 05 - Creo service rest
+        static void Main(string[] args)
+        {
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
+                .UseStartup<Startup>()
+                .Build();
+            host.Run();
+        }
 
+    }
 }
