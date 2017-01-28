@@ -5,12 +5,12 @@ using Peoples.Repositories.Interface;
 
 namespace Peoples.Repository.Memory
 {
-    //TODO : 04 - Impelmento repositorio que lee en memoria
-    public class PeopleRepositoryInMemory : IPeopleRepository
+    //TODO : 07 - Implemento un repositorio Fake
+    public class PeopleRepositoryFake : IPeopleRepository
     {
         private readonly List<Person> _context;
 
-        public PeopleRepositoryInMemory()
+        public PeopleRepositoryFake()
         {
             _context = new List<Person>
             {
