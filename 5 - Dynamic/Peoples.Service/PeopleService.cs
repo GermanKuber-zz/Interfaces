@@ -16,6 +16,7 @@ namespace Peoples.Service
 
         public IEnumerable<Person> GetPeople()
         {
+            //TODO : 13 - Realizo test de la lógica
             var result = _repository.GetPeople();
             if (result != null)
                 foreach (var person in result)

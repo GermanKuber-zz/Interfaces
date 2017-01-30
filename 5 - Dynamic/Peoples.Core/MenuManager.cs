@@ -8,6 +8,7 @@ namespace Peoples.Core
     {
         public static void Start()
         {
+            
             //TODO : 02 - Obtengo el repositorio de mi factory pero sin depender de un parametro
             IPeopleRepository repository = RepositoryFactory.GetRepository();
             //TODO : 06 - Obtengo los resultados de diferentes repostiorios

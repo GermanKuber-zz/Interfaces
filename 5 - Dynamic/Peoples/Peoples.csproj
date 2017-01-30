@@ -18,7 +18,6 @@
     <ProjectReference Include="..\Peoples.Core\Peoples.Core.csproj" />
     <ProjectReference Include="..\Peoples.Repository.Memory\Peoples.Repository.Memory.csproj" />
     <ProjectReference Include="..\Peoples.Service\Peoples.Service.csproj" />
-    <ProjectReference Include="..\Person.Repositories.CSV\Peoples.Repositories.CSV.csproj" />
     <ProjectReference Include="..\Person.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
     <ProjectReference Include="..\Person.Repositories.Service\Peoples.Repositories.Service.csproj" />
   </ItemGroup>
