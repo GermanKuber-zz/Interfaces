@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup Label="Configuration">
-    <DocumentationFile>
-    </DocumentationFile>
+    <DocumentationFile />
     <OutputPath>TodoApi.xml</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
@@ -24,6 +23,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0-rc1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Peoples.Repository.Memory\Peoples.Repository.Memory.csproj" />
     <ProjectReference Include="..\Person.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
     <ProjectReference Include="..\Person.Repositories.Service\Peoples.Repositories.Service.csproj" />
   </ItemGroup>

@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Peoples.Repositories.Interface;
 
 namespace Peoples.Repositories.Service
@@ -19,7 +23,31 @@ namespace Peoples.Repositories.Service
 
         public IEnumerable<Person> GetPeople()
         {
-            throw new NotImplementedException();
+            var result = GetPropleAsync().GetAwaiter();
+            return result.GetResult();
+        }
+
+        private async Task<IEnumerable<Person>> GetPropleAsync()
+        {
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                
+                    var data = await client.GetAsync("http://localhost:5000/api/People");
+                    var jsonResponse = await data.Content.ReadAsStringAsync();
+                    if (jsonResponse != null)
+                        return  JsonConvert.DeserializeObject<List<Person>>(jsonResponse);
+          
+                }
+            }
+
+            catch (Exception exception)
+            {
+              
+            }
+
+           return new  List<Person>();
         }
 
         public Person GetPerson(string lastName)

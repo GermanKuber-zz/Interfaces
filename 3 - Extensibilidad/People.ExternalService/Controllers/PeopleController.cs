@@ -1,20 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Peoples.Repositories.Interface;
-using Peoples.Repositories.Service;
+using Peoples.Repository.Memory;
 
 namespace People.ExternalService.Controllers
 {
     [Route("api/[controller]")]
     public class PeopleController : Controller
     {
-        static readonly IPeopleRepository PeopleRepo = new PeopleExternalRepository();
+        static readonly IPeopleRepository PeopleRepo = new PeopleRepositoryInMemory();
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Person>), 200)]
+        [AllowAnonymous]
         public IEnumerable<Person> Get()
         {
-            return PeopleRepo.GetPeople();
+            var list = PeopleRepo.GetPeople();
+            foreach (var person in list)
+                person.LastName = $"{person.LastName} - By Api Rest Service";
+
+            return list;
         }
         [HttpGet("{lastName}")]
         [ProducesResponseType(typeof(Person), 200)]
