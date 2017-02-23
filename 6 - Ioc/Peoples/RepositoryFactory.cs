@@ -5,7 +5,7 @@ using Peoples.Repository.Memory;
 
 namespace Peoples
 {
-    //TODO : 07 - Creo Factory de Repositorios
+   
     public static class RepositoryFactory
     {
         public static IPeopleRepository GetRepository(RepositoryTypeEnum repositoryType)
