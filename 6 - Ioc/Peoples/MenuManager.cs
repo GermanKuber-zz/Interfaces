@@ -4,7 +4,7 @@ using Peoples.Repositories.Interface;
 
 namespace Peoples
 {
-    //TODO : 08 - Creo Manager para administrar toda la UI
+   
     public static class MenuManager
     {
         public static void Start()
@@ -31,7 +31,6 @@ namespace Peoples
 
         private static void ShowResults(RepositoryTypeEnum repositoryType)
         {
-            //TODO : 09 - Encapsulo comportamiento comun en metodo y delego la construccion del Repositorio a la factory
             IPeopleRepository repository = RepositoryFactory.GetRepository(repositoryType);
             IEnumerable<Person> peoples = repository.GetPeople();
             foreach (var person in peoples)

@@ -8,7 +8,6 @@ using Newtonsoft.Json;
 
 namespace Peoples.Repositories.Service
 {
-    //TODO : 02 -  Implemento un repositorio que consume data externa
     public class PeopleExternalRepository : IPeopleRepository
     {
         public void AddPerson(Person newPerson)

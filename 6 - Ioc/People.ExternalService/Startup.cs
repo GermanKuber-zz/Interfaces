@@ -40,8 +40,9 @@ namespace People.ExternalService
                 });
             });
             //TODO: 01 - Registro las dependencias
-            //services.AddTransient<IPeopleRepository, PeopleRepositoryInMemory>();
-            services.AddTransient<IPeopleRepository, MockTestPeopleRepositoryInMemory>();
+            services.AddTransient<IPeopleRepository, PeopleRepositoryInMemory>();
+            //TODO: 03 - Registro las dependencias MockTest
+            //services.AddTransient<IPeopleRepository, MockTestPeopleRepositoryInMemory>();
 
         }
 

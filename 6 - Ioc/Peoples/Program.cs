@@ -4,7 +4,6 @@ namespace Peoples
 {
     public class Program
     {
-        //TODO : 06 - Refactorizo programa principal, para consumir cualquiera de los repositorios
          static void Main(string[] args)
          {
             ConsoleKeyInfo key;
@@ -15,7 +14,6 @@ namespace Peoples
                 MenuManager.OptionMenu(key);
             }
             Console.Read();
-            //TODO : 10 - Utilizo el servicio Manager UI
             //MenuManager.Start();
         }
 

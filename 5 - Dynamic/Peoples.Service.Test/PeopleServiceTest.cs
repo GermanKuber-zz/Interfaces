@@ -10,7 +10,7 @@ namespace Peoples.Service.Test
         [Fact]
         public void AddPerson_Test()
         {
-            //TODO : 12 - Realizo un test utilizando el repositorio mock
+            //TODO: 12 - Realizo un test utilizando el repositorio mock
             var mockRepository = new MockPeopleRepository();
             var newPerson = new Person
             {

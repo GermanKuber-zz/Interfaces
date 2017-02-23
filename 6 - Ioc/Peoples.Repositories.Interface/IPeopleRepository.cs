@@ -2,7 +2,6 @@
 
 namespace Peoples.Repositories.Interface
 {
-    //TODO : 01 - Modifico la interface de Repositorio para que trabaje con IENumerables
     public interface IPeopleRepository
     {
         IEnumerable<Person> GetPeople();
