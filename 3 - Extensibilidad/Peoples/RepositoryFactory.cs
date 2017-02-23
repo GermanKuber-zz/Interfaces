@@ -1,5 +1,4 @@
 using System;
-using Peoples.Repositories.CSV;
 using Peoples.Repositories.Interface;
 using Peoples.Repositories.Service;
 using Peoples.Repository.Memory;
@@ -16,9 +15,6 @@ namespace Peoples
             {
                 case  RepositoryTypeEnum.Service:
                     repo = new PeopleExternalRepository();
-                    break;
-                case RepositoryTypeEnum.Csv:
-                    repo = new CsvRepository();
                     break;
                 case RepositoryTypeEnum.Memory:
                     repo = new PeopleRepositoryInMemory();

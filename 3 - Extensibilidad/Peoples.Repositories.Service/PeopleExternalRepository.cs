@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Peoples.Repositories.Interface;
+using Newtonsoft.Json;
 
 namespace Peoples.Repositories.Service
 {
@@ -37,8 +37,8 @@ namespace Peoples.Repositories.Service
                     var data = await client.GetAsync("http://localhost:5000/api/People");
                     var jsonResponse = await data.Content.ReadAsStringAsync();
                     if (jsonResponse != null)
-                        return  JsonConvert.DeserializeObject<List<Person>>(jsonResponse);
-          
+                        return JsonConvert.DeserializeObject<List<Person>>(jsonResponse);
+
                 }
             }
 

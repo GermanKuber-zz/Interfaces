@@ -9,10 +9,11 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Peoples.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
+    <ProjectReference Include="..\Peoples.Repositories.Service\Peoples.Repositories.Service.csproj" />
     <ProjectReference Include="..\Peoples.Repository.Memory\Peoples.Repository.Memory.csproj" />
-    <ProjectReference Include="..\Person.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
-    <ProjectReference Include="..\Person.Repositories.Service\Peoples.Repositories.Service.csproj" />
   </ItemGroup>
 </Project>
