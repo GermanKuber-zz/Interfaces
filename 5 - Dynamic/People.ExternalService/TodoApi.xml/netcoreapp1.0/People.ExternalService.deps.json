@@ -17,6 +17,7 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
           "Peoples.Repositories.Interface": "1.0.0",
           "Peoples.Repositories.Service": "1.0.0",
+          "Peoples.Repository.Memory": "1.0.0",
           "Swashbuckle.AspNetCore": "1.0.0-rc1"
         },
         "runtime": {
@@ -2230,10 +2231,20 @@
       "peoples.repositories.service/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "Peoples.Repositories.Interface": "1.0.0"
+          "Peoples.Repositories.Interface": "1.0.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
           "Peoples.Repositories.Service.dll": {}
+        }
+      },
+      "peoples.repository.memory/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Peoples.Repositories.Interface": "1.0.0"
+        },
+        "runtime": {
+          "Peoples.Repository.Memory.dll": {}
         }
       }
     }
@@ -3468,6 +3479,11 @@
       "sha512": ""
     },
     "peoples.repositories.service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "peoples.repository.memory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -12,6 +12,7 @@ namespace Peoples.Core.Test
         public void Start_Test()
         {
             MenuManager.Start();
+            Assert.Equal(true, true);
         }
     }
 }

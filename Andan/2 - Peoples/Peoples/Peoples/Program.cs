@@ -10,10 +10,10 @@ namespace Peoples
         public static void Main(string[] args)
         {
             //TODO: 02 - Recorro la lista de People desde una lista
-            //List<Person> peoples = PeopleRepo.GetPeople();
+            List<Person> peoples = PeopleRepo.GetPeople();
 
-            //foreach (var person in peoples)
-            //    WritePerson(person);
+            foreach (var person in peoples)
+                WritePerson(person);
 
             //TODO: 03 - Recorro la lista de People desde un IEnumerable
             //IEnumerable<Person> peoples = PeopleRepo.GetPeople();

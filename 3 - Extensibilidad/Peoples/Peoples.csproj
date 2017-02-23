@@ -1,19 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\People.ExternalService\People.ExternalService.csproj" />
     <ProjectReference Include="..\Peoples.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
     <ProjectReference Include="..\Peoples.Repositories.Service\Peoples.Repositories.Service.csproj" />
     <ProjectReference Include="..\Peoples.Repository.Memory\Peoples.Repository.Memory.csproj" />
   </ItemGroup>
+
 </Project>

@@ -5,6 +5,7 @@ namespace People.ExternalService
 {
     class Program
     {
+        //TODO : 05 - Creo service rest
         static void Main(string[] args)
         {
             var host = new WebHostBuilder()
