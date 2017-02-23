@@ -2,7 +2,7 @@
 
 namespace Poligonos.Domain
 {
-    //TODO : 01 - Creo la clase Concreta RegularPolygon
+    //TODO: 01 - Creo la clase Concreta RegularPolygon
     public class RegularPolygon
     {
         public int Sides { get; set; }

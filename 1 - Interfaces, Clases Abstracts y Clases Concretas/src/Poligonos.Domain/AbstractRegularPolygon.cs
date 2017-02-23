@@ -1,6 +1,6 @@
 namespace Poligonos.Domain
 {
-    //TODO : 06 - Implemento una clase Abstracta
+    //TODO: 06 - Implemento una clase Abstracta
     public abstract class AbstractRegularPolygon
     {
         public int Sides { get; set; }
@@ -16,7 +16,7 @@ namespace Poligonos.Domain
         {
             return Sides * SideLength;
         }
-        //TODO : 07 - Marco el metodo que quiero obligar a implementar como Abstracto
+        //TODO: 07 - Marco el metodo que quiero obligar a implementar como Abstracto
         public abstract double GetArea();
     }
 }

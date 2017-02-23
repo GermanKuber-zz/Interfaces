@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Peoples.Data
 {
-    //TODO : 01 - Creo un repositorio de Personas
+    //TODO: 01 - Creo un repositorio de Personas
     public class PeopleRepository : IPeopleRepository
     {
         private readonly List<Person> _context;

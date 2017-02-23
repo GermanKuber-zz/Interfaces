@@ -7,17 +7,19 @@ namespace Poligonos
     {
         static void Main(string[] args)
         {
-            //TODO : 05 - Llamo a la clase concreta Square
+            
+            //TODO: 05 - Llamo a la clase concreta Square
             //var square = new Square(5);
             //DisplayPolygon("Square", square);
 
-            //TODO : 10 - Llame a Triangle clase que hereda de la clase abstracta AbstractRegularPolygon
+            //TODO: 10 - Llame a Triangle clase que hereda de la clase abstracta AbstractRegularPolygon
             //var triangle = new Triangle(5);
             //DisplayPolygon("Triangle", triangle);
 
-            //TODO : 13 - Llamo al Octagono que implementa la interface
+            //TODO: 13 - Llamo al Octagono que implementa la interface
             IRegularPolygon octagon = new Octagon(5);
             DisplayPolygon("Octagon", octagon);
+
 
             Console.Read();
         }

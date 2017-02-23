@@ -2,7 +2,7 @@
 
 namespace Poligonos.Domain
 {
-    //TODO : 12 - Implemento la Interface IRegularPolygon - Multiple Herencia
+    //TODO: 12 - Implemento la Interface IRegularPolygon - Multiple Herencia
     public class Octagon : Object, IRegularPolygon
     {
         public int Sides { get; set; }
