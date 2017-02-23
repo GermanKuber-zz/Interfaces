@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peoples.Repository.Memory\Peoples.Repository.Memory.csproj" />
-    <ProjectReference Include="..\Person.Repositories.CSV\Peoples.Repositories.CSV.csproj" />
     <ProjectReference Include="..\Person.Repositories.Interface\Peoples.Repositories.Interface.csproj" />
     <ProjectReference Include="..\Person.Repositories.Service\Peoples.Repositories.Service.csproj" />
   </ItemGroup>
