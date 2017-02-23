@@ -40,10 +40,12 @@ namespace People.ExternalService
                 });
             });
             //TODO: 01 - Registro las dependencias
-            services.AddTransient<IPeopleRepository, PeopleRepositoryInMemory>();
+            //services.AddTransient<IPeopleRepository, PeopleRepositoryInMemory>();
+            services.AddTransient<IPeopleRepository, MockTestPeopleRepositoryInMemory>();
+
         }
 
-        
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseMvcWithDefaultRoute();

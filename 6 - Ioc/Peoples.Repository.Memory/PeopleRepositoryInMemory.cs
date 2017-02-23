@@ -5,7 +5,6 @@ using Peoples.Repositories.Interface;
 
 namespace Peoples.Repository.Memory
 {
-    //TODO : 04 - Impelmento repositorio que lee en memoria
     public class PeopleRepositoryInMemory : IPeopleRepository
     {
         private readonly List<Person> _context;
